@@ -1,0 +1,80 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        white: {
+          A700: "#ffffff",
+          A700_63: "#ffffff63",
+          A700_a2: "#ffffffa2",
+          A700_99: "#ffffff99",
+        },
+        gray: {
+          50: "#f9f9f9",
+          800: "#4d4d4d",
+          900: "#212121",
+          "100_01": "#f6f7f9",
+          "200_01": "#e7e7e7",
+          "50_01": "#f8f8f8",
+        },
+        red: {
+          500: "#ff3838",
+          A400_01: "#fa0037",
+          A700_7e: "#ff00007e",
+          A700: "#ff0000",
+        },
+        light_blue: { 400: "#20c5f2" },
+        blue_gray: {
+          "100_01": "#d3d3d3",
+          "100_75": "#d9d9d975",
+          "100_19": "#d9d9d919",
+          "100_33": "#d9d9d933",
+          "100_03": "#d9d9d9",
+        },
+        black: {
+          "900_87": "#00000087",
+          "900_99": "#00000099",
+          "900_03": "#000000",
+          "900_7e": "#0000007e",
+          "900_75": "#00000075",
+          "900_6f": "#0000006f",
+          "900_33": "#00000033",
+          "900_90_01": "#00000090",
+        },
+        cyan: { 700: "#0c92b2", "700_01": "#0b90af" },
+        teal: { 900: "#003d4c" },
+        gray_500: "#9e9e9e",
+      },
+      boxShadow: {
+        xs: "0px 0px  3px 0px #00000019",
+        sm: "0px 0px  10px 0px #00000026",
+      },
+      backgroundImage: {
+        gradient: "linear-gradient(135deg, #0b90af,#20c5f2)",
+        gradient1: "linear-gradient(90deg, #fcb100,#ed893e)",
+      },
+      fontFamily: {
+        poppins: "Poppins",
+        aleo: "Aleo",
+        inter: "Inter",
+        publicsans: "Public Sans",
+      },
+      opacity: {
+        0.5: 0.5,
+        0.3: 0.3,
+        0.1: 0.1,
+        0.7: 0.7,
+        0.4: 0.4,
+        0.2: 0.2,
+        0.8: 0.8,
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms"), require("daisyui")],
+};
